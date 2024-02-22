@@ -1,10 +1,9 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
 /**
- * main - Entry point
- *
- * Description: 'positive or negative'
- *
+ * main - assign a random number.
+ * Description: 'positive or negative '
  * Return: Always 0 (Success)
  */
 int main(void)
