@@ -6,13 +6,13 @@
  */
 int main(void)
 {
-char L;
+    char L;
 
-for (L = 'a'; L <= 'z'; L++)
-{
-if (L != 'e' && L != 'q')
-putchar(L);
-}
-putchar('\n');
-return (0);
+    for (L = 'a'; L <= 'z'; L++)
+    {
+        if (L != 'e' && L != 'q')
+            putchar(L);
+    }
+    putchar('\n');
+    return (0);
 }
