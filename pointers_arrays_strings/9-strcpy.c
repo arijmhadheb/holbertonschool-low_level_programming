@@ -7,7 +7,7 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	char L = dest;
+	char * L = dest;
 
 	while (*src != '\0')
 	{
