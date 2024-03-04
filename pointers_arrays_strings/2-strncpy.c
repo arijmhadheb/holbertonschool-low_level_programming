@@ -6,7 +6,7 @@
  * @src : source pointer
  * @n : integer variable
  * Return: Always 0.
- * Credit : oussema turki
+ *
  */
 char *_strncpy(char *dest, char *src, int n)
 {
