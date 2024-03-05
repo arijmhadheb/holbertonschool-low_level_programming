@@ -22,3 +22,4 @@ char *_strstr(char *haystack, char *needle);
 void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
 int _strcmp(char *s1, char *s2);
+void reverse_array(int *a, int n);
