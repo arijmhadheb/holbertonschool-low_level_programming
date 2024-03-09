@@ -1,21 +1,20 @@
 #include "main.h"
-
 /**
- * helper - checks recursively the input from is_prime_number
- * @n: iterator
- * @b: base number to check
- * Return: 1 if n is a prime, else return 0 otherwise.
  * is_prime_number - checks if the number is a prime number
  * @n: the number to check
  * Return: 1 if n is a prime, else return 0 otherwise.
  */
-int helper(int n, int b)
+int is_prime_number(int n)
 {
-	if (b % n == 0 || b < 2)
+	int i;
+	if (n <= 1)
+	{
 		return (0);
-	else if (n == b - 1)
-		return (1);
-	else if (b > n)
-		return (helper(n + 1, b));
-	return (1);
+	}
+	for (i = 2; i * i <= n; i++)
+		if (n % i == 0)
+		{
+			return (0);
+		}
+	return (i);
 }
