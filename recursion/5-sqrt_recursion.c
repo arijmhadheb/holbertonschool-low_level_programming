@@ -5,9 +5,11 @@
  * @n: number is squared and compared against base
  * @b: base number to check
  * Return: natural square root of number base
- * _sqrt_recursion - return the natural square root of a number n.
- * @n: number to check for square roots.
- * Return: the natural square root of number n
+ * _sqrt_recursion - Calculates the natural square 
+ * root of a number recursively.
+ * @n: The number for which the square root is to be calculated.
+ * Return: The natural square root of the number 'n', or -1 if 'n' does not
+ * have a natural square root.
  */
 int helper(int n, int b)
 {
