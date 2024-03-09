@@ -1,23 +1,24 @@
 #include "main.h"
+
 /**
- * help - check the input from n to the base number b.
- * @n: a number.
- * @b: a base number
- * Return: the natural square root of a number of b.
- * _sqrt_recursion - return the natural square root of n.
- * @n: the number of square root.
- * Return: the natural square root of n.
+ * helper - checks the input number from n to the base
+ * @n: number is squared and compared against base
+ * @b: base number to check
+ * Return: natural square root of number base
+ * _sqrt_recursion - return the natural square root of a number n.
+ * @n: number to check for square roots.
+ * Return: the natural square root of number n
  */
-int help(int n, int b)
+int helper(int n, int b)
 {
 	if (n * n == b)
 		return (n);
 	if (n * n > b)
 		return (-1);
-	return (help(n + 1, b));
+	return (helper(n + 1, b));
 }
 
 int _sqrt_recursion(int n)
 {
-	return (help(1, n));
+	return (helper(1, n));
 }
