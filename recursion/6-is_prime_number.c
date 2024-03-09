@@ -4,17 +4,13 @@
  * @n: the number to check
  * Return: 1 if n is a prime, else return 0 otherwise.
  */
-int is_prime_number(int n)
+int is_prime_number(int n, int i)
 {
-	int i;
-	if (n <= 1)
-	{
+	if (i % n == 0 || i < 2)
 		return (0);
-	}
-	for (i = 2; i * i <= n; i++)
-		if (n % i == 0)
-		{
-			return (0);
-		}
-	return (i);
+	else if (n == i - 1)
+		return (1);
+	else if (i > n)
+		return (is_prime_number(n + 1, i ));
+	return (1);
 }
