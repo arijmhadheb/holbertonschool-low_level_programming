@@ -2,70 +2,66 @@
 #include <stdlib.h>
 
 /**
- * op_add - addition operator
- * @a: int
- * @b: int
- * Return: sum of 2 numbers
+ * op_add - operator
+ * @a: first int
+ * @b: second int
+ * Return: sum numbers
  */
 int op_add(int a, int b)
 {
-return (a + b);
+	return (a + b);
 }
 
 /**
- * op_sub - subtraction operator
+ * op_sub - operator
  * @a: first in
- * @b: int
- * Return: difference of 2 numbers
+ * @b: second int
+ * Return: difference numbers
  */
 int op_sub(int a, int b)
 {
-return (a - b);
+	return (a - b);
 }
 
 /**
- * op_mul - product
- * @a: int
- * @b: int
- * Return: product of the numbers
+ * op_mul - product numbers
+ * @a: first int
+ * @b: second int
+ * Return: product numbers
  */
 int op_mul(int a, int b)
 {
-return (a * b);
+	return (a * b);
 }
 
 /**
- * op_div - division of 2 numbers
- * @a: int
- * @b: int
- * Return: result of the division of the numbers
+ * op_div - division numbers
+ * @a: first int
+ * @b: second int
+ * Return: result numbers
  */
 int op_div(int a, int b)
 {
-if (b == 0)
-
-{
-printf("Error\n");
-exit(100);
-}
-
-return (a / b);
+	if (b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+	return (a / b);
 }
 
 /**
- * op_mod - get remainder of the division of 2 numbers
- * @a: int
- * @b: int
- * Return: remainder of division of the numbers
+ * op_mod - get remainder of numbers
+ * @a: first int
+ * @b: second int
+ * Return: remainder numbers
  */
 int op_mod(int a, int b)
 {
-if (b == 0)
-
-{
-printf("Error\n");
-exit(100);
-}
-
-return (a % b);
+	if (b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+	return (a % b);
 }
