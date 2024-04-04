@@ -1,11 +1,10 @@
 #include "lists.h"
 /**
- * add_node - adds a new node at the beginning of a list_t list.
- * of a list_t list.
- * @head: head of the linked list.
- * @str: string to store in the list.
- * Return: address of the head.
+ * list_len - the number of elements in a linked list_t list.
+ * @h: singly linked list.
+ * Return: number of elements in the list.
  */
+
 size_t list_len(const list_t *h)
 {
 	size_t count;
