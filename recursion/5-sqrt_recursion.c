@@ -7,7 +7,6 @@
  * Return: natural square root of number base
  * _sqrt_recursion - return the natural square root of a number n.
  * @n: number to check for square roots.
- * Return: the natural square root of number n
  */
 int checker(int n, int base)
 {
